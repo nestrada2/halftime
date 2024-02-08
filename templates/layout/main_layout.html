@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="Basketball Stats" />
+    <meta name="keywords" content="basketball, nba, stats, analytics" />
+    <meta name="author" content="Nino Estrada" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="revised" content="Nino, 2/7/2024" />
+
+    <title>{% block title %} {% endblock %}</title>
+
+    <!-- Bulma -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+    />
+
+    <!-- Adobe Fonts -->
+    <link rel="stylesheet" href="https://use.typekit.net/ktg1ani.css" />
+
+    <!-- Main Style -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{url_for('static', filename='styles/style.css')}}"
+    />
+  </head>
+
+  <body>
+    <nav>{% include "/partials/header.html" %}</nav>
+
+    {% block content %} {% endblock %}
+  </body>
+  <footer class="footer">{% include "/partials/footer.html" %}</footer>
+</html>

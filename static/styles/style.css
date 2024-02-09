@@ -4,9 +4,14 @@
   padding: 0;
 }
 
-body {
-  background-color: rgb(50, 52, 64);
-  color: #fafafa;
+.light {
+  background-color: transparent;
+  color: 4a4a4a !important;
+}
+
+.dark {
+  background-color: rgb(50, 52, 64) !important;
+  color: #fafafa !important;
 }
 
 .title-page {
@@ -17,9 +22,13 @@ body {
   font-style: normal;
 }
 
+a {
+  color: inherit; /* remove default link color */
+}
+
 /* -------------------- Navagation Bar -------------------- */
 .navbar {
-  background-color: rgb(250, 250, 250);
+  background-color: transparent; /* Remove Bulma's Built-i=In Styling */
   font-family: fairwater-sans, sans-serif;
   font-weight: 300;
   font-style: normal;
@@ -41,5 +50,6 @@ body {
 
 /* -------------------- Footer -------------------- */
 .footer {
+  background-color: transparent; /* Remove Bulma's Built-i=In Styling */
   position: relative; /* Ensures footer stays at the bottom of the page */
 }

@@ -1,7 +1,14 @@
 {% extends "layout/main_layout.html" %} {% block title %} halftime {% endblock%}
+
+{% block subheader %} Today's Games {% endblock %}
+
 {% block content %}
 
-<h1 class="title-page">Current Games</h1>
+<h1 class="title-page">Live Now</h1>
+<br />
+<h1 class="title-page">Upcoming</h1>
+<br />
+<h1 class="title-page">Recap</h1>
 <br />
 <br />
 <br />
@@ -15,6 +22,7 @@
 <br />
 <br />
 <br />
-<br />
-<br />
+{% for game in game_set %}
+    <p>{{game}}</p>
+{% endfor %}
 {% endblock %}

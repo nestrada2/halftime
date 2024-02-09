@@ -22,9 +22,11 @@
   <!-- Links -->
   <div id="navbarBasicExample" class="navbar-menu">
     <div class="navbar-start">
-      <a class="navbar-item"> Home </a>
+      <a class="navbar-item" href="/"> Home </a>
 
-      <a class="navbar-item"> 1-on-1 </a>
+      <a class="navbar-item" href="/players"> Players </a>
+
+      <a class="navbar-item" href="/one_on_one"> 1-on-1 </a>
 
       <!-- Dropdown Menu -->
       <div class="navbar-item has-dropdown is-hoverable">
@@ -32,23 +34,25 @@
 
         <!-- Dropdown Menu Links -->
         <div class="navbar-dropdown">
-          <a class="navbar-item"> About </a>
-          <a class="navbar-item"> Jobs </a>
-          <a class="navbar-item"> Contact </a>
+          <a class="navbar-item" href="/stat_leaders"> Stat Leaders </a>
+          <a class="navbar-item" href="/evolution_of_the_game"> Evolution of the Game </a>
+          <a class="navbar-item" href="/strategies"> Strategies </a>
+          <a class="navbar-item" href="/coaches"> Coaches </a>
           <hr class="navbar-divider" />
           <a class="navbar-item"> Report an issue </a>
         </div>
       </div>
     </div>
 
-    <!-- Sign Up / Log In -->
+    <!-- Light Mode / Dark Mode -->
     <div class="navbar-end">
       <div class="navbar-item">
         <div class="buttons">
-          <a class="button is-primary">
-            <strong>Sign up</strong>
-          </a>
-          <a class="button is-light"> Log in </a>
+        
+          <button class="button is-light" id="light">
+            <i class="fa-solid fa-toggle-on"></i>
+          </button>
+          <button class="button is-dark" id="dark"> <i class="fa-solid fa-toggle-off"></i> </button>
         </div>
       </div>
     </div>
